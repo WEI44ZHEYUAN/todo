@@ -3,12 +3,12 @@ function App() {
     return (
         <Container>
 	    <Row>
-	    	<Col ac={{ text-align: center }}>
+	    	<Col>
 	    	   <h1>ToDo App by ZHEYUAN WEI(2211422)</h1>
 	    	</Col>
 	    </Row>
             <Row>
-                <Col md={{ offset: 3, span: 6 }}>
+                <Col>
                     <TodoListCard />
                 </Col>
             </Row>
@@ -129,6 +129,7 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
             method: 'PUT',
             method: 'PUT',
             method: 'PUT',
+            method: 'PUT',
             body: JSON.stringify({
                 name: item.name,
                 completed: !item.completed,
@@ -182,4 +183,3 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
                     </Button>
                 </Col>
             </Row>
-        </Container>
