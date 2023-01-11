@@ -3,7 +3,7 @@ function App() {
     return (
         <Container>
 	    <Row>
-	    	<Col>
+	    	<Col md={{ style:text-align: center}}>
 	    	   <h1>ToDo App by ZHEYUAN WEI(2211422)</h1>
 	    	</Col>
 	    </Row>
