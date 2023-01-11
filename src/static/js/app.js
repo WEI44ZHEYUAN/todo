@@ -8,7 +8,7 @@ function App() {
 	    	</Col>
 	    </Row>
             <Row>
-                <Col>
+                <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
                 </Col>
             </Row>
@@ -130,6 +130,7 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
             method: 'PUT',
             method: 'PUT',
             method: 'PUT',
+            method: 'PUT',
             body: JSON.stringify({
                 name: item.name,
                 completed: !item.completed,
@@ -182,4 +183,3 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
                         <i className="fa fa-trash text-danger" />
                     </Button>
                 </Col>
-            </Row>
