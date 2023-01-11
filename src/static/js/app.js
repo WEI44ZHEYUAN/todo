@@ -3,7 +3,9 @@ function App() {
     return (
         <Container>
 	    <Row>
-	    	<h1> ToDo App by ZHEYUAN WEI(SID:2211422)</h1>
+	    	<Col>
+	    		<h1>ToDo App by Zheyuan Wei(SID:2211422)</h1>
+	    	</Col>
 	    </Row>
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
