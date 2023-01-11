@@ -4,6 +4,7 @@ function App() {
         <Container>
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
+	    	   <h1>ToDo App by ZHEYUAN WEI(SID:2211422)</h1>
                    <TodoListCard />
                 </Col>
             </Row>
@@ -118,13 +119,7 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
     const { Container, Row, Col, Button } = ReactBootstrap;
 
     const toggleCompletion = () => {
-        fetch(`/items/${item.id}`, {
-            method: 'PUT',
-            method: 'PUT',
-            method: 'PUT',
-            method: 'PUT',
-            method: 'PUT',
-            method: 'PUT',
+        fetch(`/items/${item.id}`, {      
             method: 'PUT',
             body: JSON.stringify({
                 name: item.name,
@@ -178,3 +173,9 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
                         <i className="fa fa-trash text-danger" />
                     </Button>
                 </Col>
+	    </Row>
+	</Container>
+    );
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
